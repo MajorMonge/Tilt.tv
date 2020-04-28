@@ -1,0 +1,118 @@
+/*BC264F*/
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Fredoka+One&display=swap");
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "menu footer";
+  grid-template-rows: 10vh 70vh 20vh;
+  grid-template-columns: 25vh;
+  margin: 0px;
+  font-family: "Baloo Bhaina 2", cursive;
+  background-color: #18181b !important;
+}
+
+body > * {
+  padding: 15px 20px;
+}
+
+h5 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  color: #bc264f;
+}
+
+h5.fancy {
+  display: inline;
+  font-family: "Fredoka One", cursive;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
+
+p{
+    margin-top: 0px;
+}
+
+p b{
+    color: #bc264f;
+}
+
+img.logo {
+  height: 5vh;
+  width: auto;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #bc264f;
+  color: #bc264f;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+a.twitch {
+  color: #6441a4;
+  font-weight: 700;
+}
+
+a.acitve,
+a:active,
+a:hover,
+a:target {
+  color: #bc264f;
+  text-decoration: none;
+}
+/* TOPNAV */
+
+#topNav {
+  grid-area: header;
+  background-color: #18181b !important;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#topNav > a {
+  color: white;
+  text-decoration: none;
+}
+
+/* SIDENAV */
+
+#sideNav {
+  grid-area: menu;
+  background-color: #18181b !important;
+  color: white;
+  display: block;
+}
+
+#sideNav p{
+  line-height: 1rem;
+}
+/* MIDDLECONTENT */
+
+#middleContent {
+  grid-area: content;
+  background-color: #000000;
+  color: white;
+}
+
+/* BOTTOMFOOTER */
+
+#bottomFooter {
+  grid-area: footer;
+  background-color: #29292c;
+  color: white;
+  text-align: center;
+}
